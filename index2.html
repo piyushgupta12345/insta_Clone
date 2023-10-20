@@ -1,0 +1,1998 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS -->
+    <link rel="stylesheet" href="./style/style.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>Document</title>
+    <style>
+
+
+        /* <!-- ===================  Container  ==================== --> */
+
+        .container {
+            display: flex;
+            gap: 30px;
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+        }
+
+        /* <!-- ******************  Left-main  ****************** --> */
+
+        .left-main {
+            /* width: 280px; */
+            border-radius: 15px;
+        }
+
+
+        /* <!-- ###############  Profile-Section  ################ --> */
+
+        .profile-section {
+            display: flex;
+            padding: 15px;
+            /* width: 280px; */
+            background: #FFFFFF;
+            border-radius: 15px;
+            margin-top: 5px;
+            gap: 20px;
+            background: #FFFFFF;
+            margin-bottom: 20px;
+        }
+
+        /* <!-- -----------------  Profile img  ---------------- --> */
+
+        .profile-img img {
+            width: 50px;
+            border-radius: 30px;
+            cursor: pointer;
+        }
+
+        /* <!-- -----------------  Profile Intro  ---------------- --> */
+
+        .intro {
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+            justify-content: start;
+            gap: 5px;
+        }
+
+        /* <!-- <<<<<<<<<<<<<<<<<<  Heading  >>>>>>>>>>>>>>>>>>> --> */
+
+        h2 {
+            font-size: 1.3rem;
+            font-weight: 600;
+        }
+
+        /* <!-- <<<<<<<<<<<<<<<<<<  paragraph  >>>>>>>>>>>>>>>>>>> --> */
+
+        p {
+            color: #a09baf
+        }
+
+        /* <!-- ###############  Home-Section  ################ --> */
+
+        .home-section {
+            display: flex;
+            /* width: 280px; */
+            justify-content: start;
+            align-items: center;
+            padding: 15px 50px;
+            gap: 30px;
+            height: 4rem;
+            background: #FFFFFF;
+            position: relative;
+            border-top-right-radius: 15px;
+            border-top-left-radius: 15px;
+            cursor: pointer;
+        }
+
+        .home-section::before {
+            height: 4rem;
+            width: 8px;
+            background: #6b4ce6;
+            content: "";
+            position: absolute;
+            left: 0px;
+            border-top-left-radius: 15px;
+        }
+
+        .home-section:hover {
+            background-color: #ebe6fa
+        }
+
+        .home-section:hover span i {
+            color: var(--color-purple)
+        }
+
+        .home-section:hover h2 {
+            color: var(--color-purple)
+        }
+
+
+        /* <!-- ###############  Explore-Section  ################ --> */
+
+        .explore-section {
+            display: flex;
+            /* width: 280px; */
+            justify-content: start;
+            align-items: center;
+            position: relative;
+            padding: 15px 50px;
+            height: 4rem;
+            gap: 33px;
+            background: #FFFFFF;
+            transition: all 0.1s ease-in-out;
+            cursor: pointer;
+        }
+
+        .explore-section:hover::before {
+            height: 4rem;
+            width: 8px;
+            background: var(--color-purple);
+            content: "";
+            position: absolute;
+            left: 0px;
+        }
+
+        .explore-section:hover {
+            background-color: #ebe6fa
+        }
+
+        .explore-section:hover span i {
+            color: var(--color-purple)
+        }
+
+        .explore-section:hover h2 {
+            color: var(--color-purple)
+        }
+
+        /* <!-- ###############  Notifications-Section  ################ --> */
+
+        .notifications-section {
+            display: flex;
+            /* width: 280px; */
+            justify-content: start;
+            align-items: center;
+            position: relative;
+            height: 4rem;
+            padding: 15px 50px;
+            gap: 35px;
+            background: #FFFFFF;
+            transition: all 0.1s ease-in-out;
+            cursor: pointer;
+        }
+
+        .notifications-section:hover::before {
+            height: 4rem;
+            width: 8px;
+            background: var(--color-purple);
+            content: "";
+            position: absolute;
+            left: 0px;
+        }
+
+
+        .notifications-section:hover {
+            background-color: #ebe6fa
+        }
+
+        .notifications-section:hover span i {
+            color: var(--color-purple)
+        }
+
+        .notifications-section:hover h2 {
+            color: var(--color-purple)
+        }
+
+        /* <!-- -----------------  Notifications-Group  ---------------- --> */
+
+        .notifications-group {
+            display: none;
+            background: #fff;
+            border-radius: 15px;
+            padding: 15px;
+            position: relative;
+            left: 50px;
+            top: 220px;
+        }
+
+        /* <!-- <<<<<<<<<<<<<<<  notifications-sec  >>>>>>>>>>>>>> --> */
+
+        .notifications-sec {
+            width: 400px;
+            display: flex;
+            align-items: start;
+            gap: 12px;
+            min-height: 80px;
+        }
+
+        /* <!-- ...........  intro  ............ --> */
+
+        .intro {
+            margin-top: 5px;
+        }
+
+        h3 span {
+            font-weight: 600;
+        }
+
+        h3 {
+            line-height: 1.5rem;
+            font-weight: 500;
+        }
+
+        p {
+            font-size: 0.9rem;
+        }
+
+        /* <!-- ###############  Messages-Section  ################ --> */
+
+        .messages-section {
+            display: flex;
+            /* width: 280px; */
+            justify-content: start;
+            align-items: center;
+            position: relative;
+            height: 4rem;
+            padding: 15px 50px;
+            gap: 34px;
+            background: #FFFFFF;
+            transition: all 0.1s ease-in-out;
+            cursor: pointer;
+        }
+
+        .messages-section:hover::before {
+            height: 4rem;
+            width: 8px;
+            background: var(--color-purple);
+            content: "";
+            position: absolute;
+            left: 0px;
+        }
+
+        .messages-section:hover {
+            background-color: #ebe6fa
+        }
+
+        .messages-section:hover span i {
+            color: var(--color-purple)
+        }
+
+        .messages-section:hover h2 {
+            color: var(--color-purple)
+        }
+
+
+        /* <!-- ###############  Bookmarks-Section  ################ --> */
+
+        .bookmarks-section {
+            display: flex;
+            /* width: 280px; */
+            justify-content: start;
+            align-items: center;
+            position: relative;
+            height: 4rem;
+            padding: 15px 50px;
+            gap: 38px;
+            background: #FFFFFF;
+            transition: all 0.1s ease-in-out;
+            cursor: pointer;
+        }
+
+        .bookmarks-section:hover::before {
+            height: 4rem;
+            width: 8px;
+            background: var(--color-purple);
+            content: "";
+            position: absolute;
+            left: 0px;
+        }
+
+        .bookmarks-section:hover {
+            background-color: #ebe6fa
+        }
+
+        .bookmarks-section:hover span i {
+            color: var(--color-purple)
+        }
+
+        .bookmarks-section:hover h2 {
+            color: var(--color-purple)
+        }
+
+
+        /* <!-- ###############  Analytics-Section  ################ --> */
+
+        .analytics-section {
+            display: flex;
+            /* width: 280px; */
+            justify-content: start;
+            height: 4rem;
+            position: relative;
+            align-items: center;
+            padding: 15px 50px;
+            gap: 34px;
+            background: #FFFFFF;
+            transition: all 0.1s ease-in-out;
+            cursor: pointer;
+        }
+
+        .analytics-section:hover::before {
+            height: 4rem;
+            width: 8px;
+            background: var(--color-purple);
+            content: "";
+            position: absolute;
+            left: 0px;
+        }
+
+        .analytics-section:hover {
+            background-color: #ebe6fa
+        }
+
+        .analytics-section:hover span i {
+            color: var(--color-purple)
+        }
+
+        .analytics-section:hover h2 {
+            color: var(--color-purple)
+        }
+
+        /* <!-- ###############  Theme-Section  ################ --> */
+
+        .theme-section {
+            display: flex;
+            /* width: 280px; */
+            justify-content: start;
+            height: 4rem;
+            position: relative;
+            align-items: center;
+            padding: 15px 50px;
+            gap: 33px;
+            background: #FFFFFF;
+            transition: all 0.1s ease-in-out;
+            cursor: pointer;
+        }
+
+        .theme-section:hover::before {
+            height: 4rem;
+            width: 8px;
+            background: var(--color-purple);
+            content: "";
+            position: absolute;
+            left: 0px;
+        }
+
+        .theme-section:hover {
+            background-color: #ebe6fa
+        }
+
+        .theme-section:hover span i {
+            color: var(--color-purple)
+        }
+
+        .theme-section:hover h2 {
+            color: var(--color-purple)
+        }
+
+        /* <!-- ###############  Settings-Section  ################ --> */
+
+        .settings-section {
+            display: flex;
+            /* width: 280px; */
+            justify-content: start;
+            align-items: center;
+            height: 4rem;
+            position: relative;
+            padding: 15px 50px;
+            gap: 33px;
+            background: #FFFFFF;
+            border-bottom-right-radius: 15px;
+            border-bottom-left-radius: 15px;
+            transition: all 0.1s ease-in-out;
+        }
+
+        .settings-section:hover::before {
+            height: 4rem;
+            width: 8px;
+            background: var(--color-purple);
+            content: "";
+            position: absolute;
+            left: 0px;
+            border-bottom-left-radius: 15px;
+        }
+
+        .settings-section:hover {
+            background-color: #ebe6fa
+        }
+
+        .settings-section:hover span i {
+            color: var(--color-purple)
+        }
+
+        .settings-section:hover h2 {
+            color: var(--color-purple)
+        }
+
+        /* <!-- ###############  Create-post-btn-Section  ################ --> */
+
+        #create-post-btn {
+            padding: 10px 76px;
+            font-size: 1.5rem;
+            border-radius: 30px;
+            cursor: pointer;
+            color: #FFFFFF;
+            background-color: var(--color-purple);
+            margin-top: 20px;
+            border: none;
+            transition: all 0.2s ease-in-out;
+        }
+
+        #create-post-btn:hover {
+            background-color: var(--color-purple-hover);
+        }
+
+        /* <!-- ******************  Mid-main  ****************** --> */
+
+        .mid-main {
+            /* display: none; */
+        }
+
+        /* <!-- ----------------  Post Section  ---------------- --> */
+
+        .post-section {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 600px;
+            background: #FFFFFF;
+            margin-top: 10px;
+            padding: 6px 15px;
+            border-radius: 40px;
+        }
+
+        .post-section input {
+            width: 380px;
+            font-size: 1.1rem;
+            color: #a09baf;
+            border: none;
+        }
+
+        .post-section .post-btn {
+            padding: 10px 35px;
+            font-size: 1.4rem;
+            border-radius: 30px;
+            cursor: pointer;
+            color: #FFFFFF;
+            background-color: #6b4ce6;
+            border: none;
+        }
+
+        /* <!-- ----------------  Post Uploaded Section  ---------------- --> */
+
+        .post-uploaded-section {
+            background-color: #FFFFFF;
+            margin-top: 10px;
+            max-width: 600px;
+            border-radius: 15px;
+        }
+
+        /* <!-- <<<<<<<<<<<<<<  profile-Container  >>>>>>>>>>>>>>>> --> */
+
+        .post-uploaded-section .profile-container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        /* <!-- ..........  left-profile-container  .........  --> */
+
+        .left-profile-container {
+            display: flex;
+            padding: 10px 15px;
+            width: 280px;
+            background: #FFFFFF;
+            border-radius: 15px;
+            gap: 20px;
+        }
+
+        /* <!-- ..........  right-profile-container  .........  --> */
+
+        .right-profile-container {
+            display: flex;
+            font-size: 2rem;
+            margin-top: -20px;
+            padding-right: 15px
+        }
+
+        /* <!-- <<<<<<<<<<<<<<  feed img  >>>>>>>>>>>>>>>> --> */
+
+        .feed-img {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 0px 15px;
+        }
+
+        .feed-img img {
+            width: 570px;
+            border-radius: 15px;
+        }
+
+        /* <!-- <<<<<<<<<<<<<<  Icon  >>>>>>>>>>>>>>>> --> */
+
+        .icon {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 15px;
+        }
+
+        /* <!-- ...........  Left-Icon  ............ --> */
+
+        .left-icon i {
+            font-size: 1.4rem;
+            margin-left: 12px;
+        }
+
+        /* <!-- ...........  Right-Icon  ............ --> */
+
+        .right-icon i {
+            font-size: 1.4rem;
+            margin-right: 12px;
+        }
+
+        /* <!-- <<<<<<<<<<<<<<  Post intro  >>>>>>>>>>>>>>>> --> */
+
+
+        .post-uploaded-section>p {
+            word-spacing: 1px;
+            color: black;
+            padding: 0px 15px;
+            line-height: 1.4rem;
+            padding-bottom: 15px;
+        }
+
+        .post-uploaded-section>p>img:first-child {
+            width: 25px;
+            border-radius: 30px;
+            position: relative;
+            border: 4px solid white;
+            top: 5px;
+            cursor: pointer;
+        }
+
+        .post-uploaded-section>p>img:nth-child(2) {
+            width: 25px;
+            border-radius: 30px;
+            position: relative;
+            right: 12px;
+            border: 4px solid white;
+            top: 5px;
+            cursor: pointer;
+        }
+
+        .post-uploaded-section>p>img:nth-child(3) {
+            width: 25px;
+            border-radius: 30px;
+            position: relative;
+            right: 24px;
+            border: 4px solid white;
+            top: 5px;
+            cursor: pointer;
+        }
+
+        .post-uploaded-section>p>span {
+            color: #000;
+            font-weight: 600;
+        }
+
+        .post-uploaded-section>p>small {
+            color: #a09baf;
+            letter-spacing: 1px;
+        }
+
+        /* <!-- ******************  right-main  ****************** --> */
+
+        .right-main {
+            /* display: none; */
+        }
+
+        .right-container {}
+
+        .messages-container {
+            background-color: #FFFFFF;
+            width: 280px;
+            padding: 15px 12px;
+            border-radius: 18px;
+        }
+
+        /* <!-- <<<<<<<<<<<<<<  messages-section  >>>>>>>>>>>>>>> --> */
+
+        .messages-container .messages-section {}
+
+        /* <!-- <<<<<<<<<<<<<<  search-container  >>>>>>>>>>>>>>> --> */
+
+        .search-container {
+            background: #ebe6fa;
+            padding: 15px 15px;
+            border-radius: 35px;
+            display: flex;
+            align-items: center;
+            border: none;
+            gap: 15px;
+        }
+
+        /* <!-- ............  Icon  ........... --> */
+
+        .search-container i {
+            font-size: 1.4rem;
+        }
+
+        /* <!-- ............  Input Search  ........... --> */
+
+        .search-container input {
+            border: none;
+            background: #ebe6fa;
+            width: 215px;
+            font-size: 1rem;
+        }
+
+        /* <!-- <<<<<<<<<<<<<<  option-section  >>>>>>>>>>>>>>> --> */
+
+        .option-section {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 18px;
+            padding: 10px;
+        }
+
+        /* <!-- ..............  Heading  ............... --> */
+
+        .option-section h3 {
+            font-size: 0.9rem;
+            font-weight: 600;
+        }
+
+        .option-section h3:nth-child(3) {
+            font-size: 0.9rem;
+            font-weight: 600;
+            color: #6b4ce6;
+        }
+
+        hr {
+            height: 5px;
+            background: #ebe6fa;
+            border-radius: 10px;
+            border: none;
+            cursor: pointer;
+        }
+
+        /* <!-- <<<<<<<<<<<<<<  primary-section  >>>>>>>>>>>>>>> --> */
+
+        .primary-section {
+            display: flex;
+            gap: 15px;
+            justify-content: start;
+            align-items: center;
+            margin-top: 15px;
+        }
+
+        /* <!-- ...........  primary-img  ............ --> */
+
+        .primary-img {
+            display: flex;
+            justify-content: center;
+        }
+
+        /* <!-- /////////////  img  ////////////// --> */
+
+        .primary-img img {
+            width: 48px;
+            border-radius: 35px;
+        }
+
+        /* <!-- ...........  primary-intro  ............ --> */
+
+        .primary-intro {
+            display: flex;
+            flex-direction: column;
+            gap: 2px;
+            justify-content: center;
+        }
+
+        /* <!-- /////////////  Heading  ////////////// --> */
+
+        .primary-intro h3 {
+            font-size: 1rem;
+        }
+
+        /* <!-- /////////////  paragraph  ////////////// --> */
+
+        .primary-intro p {
+            font-size: 0.9rem;
+        }
+
+        /* <!-- -------------  requests-name  -------------- --> */
+
+        .right-container>h3 {
+            margin-top: 20px;
+            font-size: 1rem;
+            color: #9e98b3;
+        }
+
+        /* <!-- -------------  requests-container  -------------- --> */
+
+        .requests-container {}
+
+        /* <!-- <<<<<<<<<<<<<  requests-card  >>>>>>>>>>>>> --> */
+
+        .requests-card {
+            background-color: #FFFFFF;
+            width: 280px;
+            padding: 15px 12px;
+            border-radius: 18px;
+            margin-top: 20px;
+        }
+
+        /* <!-- ..............  profile-sec  ............. --> */
+
+        .profile-sec {
+            display: flex;
+            justify-content: start;
+            align-items: center;
+            gap: 15px;
+            margin-bottom: 18px;
+        }
+
+        /* <!-- /////////////  profile-img  ////////////// --> */
+
+        .profile-img {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* <!-- /////////////  intro  ////////////// --> */
+
+        .intro {
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+            justify-content: start;
+            gap: 5px;
+        }
+
+        /* <!-- \\\\\\\\\\\\  Heading  \\\\\\\\\\\\ --> */
+
+        h3 {
+            font-size: 1rem;
+        }
+
+        /* <!-- \\\\\\\\\\\\  paragraph  \\\\\\\\\\\\ --> */
+
+        p {
+            font-size: 1.1rem;
+        }
+
+        /* <!-- ..............  btns-sec  ............. --> */
+
+        .btns {
+            display: flex;
+            gap: 12px;
+        }
+
+        /* <!-- ////////////  Button  //////////// --> */
+
+        button {
+            padding: 10px 28px;
+            font-size: 1rem;
+            border: none;
+            border-radius: 35px;
+            cursor: pointer;
+            background: #ebe6fa;
+        }
+
+        button:first-child {
+            background-color: #6b4ce6;
+            color: #FFFFFF;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- +++++++++++++++++++++++  Header  ++++++++++++++++++++++++ -->
+
+    <header>
+
+        <!-- ===================  Navigation  ==================== -->
+
+        <nav>
+
+            <!-- ******************  Left-Side  ****************** -->
+
+            <div class="left">
+                nokoSocial
+            </div>
+
+            <!-- ******************  mid-Side  ****************** -->
+
+            <div class="mid">
+
+                <!-- ###############  Search-Icon  ################ -->
+                <i class="fa-solid fa-magnifying-glass"></i>
+
+                <!-- ###############  Input-Search  ################ -->
+                <input type="search" placeholder="Search for creators and influencer">
+
+            </div>
+
+            <!-- ******************  right-Side  ****************** -->
+
+            <div class="right">
+
+                <!-- ###############  Create Button  ################ -->
+                <button>Create</button>
+
+                <!-- ###############  Profile-img  ################ -->
+                <div class="profile-img">
+                    <img src="./images/profile-1.jpg" alt="">
+                </div>
+
+            </div>
+
+        </nav>
+
+    </header>
+
+    <!-- +++++++++++++++++++++++  Main  ++++++++++++++++++++++++ -->
+
+    <main>
+
+        <!-- ===================  Container  ==================== -->
+
+        <div class="container">
+
+            <!-- ******************  Left-main  ****************** -->
+
+            <div class="left-main">
+
+                <!-- ###############  Profile-Section  ################ -->
+
+                <section class="profile-section">
+
+                    <!-- -----------------  Profile img  ---------------- -->
+
+                    <div class="profile-img">
+                        <img src="./images/profile-1.jpg" alt="">
+                    </div>
+
+                    <!-- -----------------  Profile Intro  ---------------- -->
+
+                    <div class="intro">
+
+                        <!-- <<<<<<<<<<<<<<<<<<  Heading  >>>>>>>>>>>>>>>>>>> -->
+                        <h2>Diana Ayi</h2>
+
+                        <!-- <<<<<<<<<<<<<<<<<<  paragraph  >>>>>>>>>>>>>>>>>>> -->
+                        <p>@dayi</p>
+
+                    </div>
+
+                </section>
+
+                <!-- ###############  Home-Section  ################ -->
+
+                <section class="home-section">
+
+                    <!-- -----------------  Home-Icon  ---------------- -->
+                    <span><i class="fa-solid fa-house"></i></span>
+
+                    <!-- -----------------  Heading  ---------------- -->
+                    <h2>Home</h2>
+
+                </section>
+
+                <!-- ###############  Explore-Section  ################ -->
+
+                <section class="explore-section">
+
+                    <!-- -----------------  Explore-Icon  ---------------- -->
+                    <span><i class="fa-solid fa-crosshairs"></i></span>
+
+                    <!-- -----------------  Heading  ---------------- -->
+                    <h2>Explore</h2>
+
+                </section>
+
+                <!-- ###############  Notifications-Section  ################ -->
+
+                <section class="notifications-section">
+
+                    <!-- -----------------  Notifications-Icon  ---------------- -->
+                    <span><i class="fa-solid fa-bell"></i></span>
+
+                    <!-- -----------------  Heading  ---------------- -->
+                    <h2>Notifications</h2>
+
+                    <!-- -----------------  Notifications-Group  ---------------- -->
+
+                    <div class="notifications-group">
+
+                        <!-- <<<<<<<<<<<<<<<  notifications-sec  >>>>>>>>>>>>>> -->
+
+                        <div class="notifications-sec">
+
+                            <!-- ...........  profile-img  ............ -->
+
+                            <div class="profile-img">
+                                <img src="./images/profile-10.jpg" alt="">
+                            </div>
+
+                            <!-- ...........  intro  ............ -->
+
+                            <div class="intro">
+
+                                <!-- /////////////  Heading  ///////////// -->
+                                <h3><span>Keke Benjamin</span> accepted Your friend request</h3>
+
+                                <!-- /////////////  paragraph  ///////////// -->
+                                <p>2 DAYS AGO</p>
+
+                            </div>
+                        </div>
+
+                        <!-- <<<<<<<<<<<<<<<  notifications-sec  >>>>>>>>>>>>>> -->
+
+                        <div class="notifications-sec">
+
+                            <!-- ...........  profile-img  ............ -->
+
+                            <div class="profile-img">
+                                <img src="./images/profile-14.jpg" alt="">
+                            </div>
+
+                            <!-- ...........  intro  ............ -->
+
+                            <div class="intro">
+
+                                <!-- /////////////  Heading  ///////////// -->
+                                <h3><span>Tomas jain</span> commented on Your post</h3>
+
+                                <!-- /////////////  paragraph  ///////////// -->
+                                <p>1 HOUR AGO</p>
+
+                            </div>
+                        </div>
+
+                        <!-- <<<<<<<<<<<<<<<  notifications-sec  >>>>>>>>>>>>>> -->
+
+                        <div class="notifications-sec">
+
+                            <!-- ...........  profile-img  ............ -->
+
+                            <div class="profile-img">
+                                <img src="./images/profile-11.jpg" alt="">
+                            </div>
+
+                            <!-- ...........  intro  ............ -->
+
+                            <div class="intro">
+
+                                <!-- /////////////  Heading  ///////////// -->
+                                <h3>
+                                    <sapn>Tony shark</sapn> commented on a post you're tagged in
+                                </h3>
+
+                                <!-- /////////////  paragraph  ///////////// -->
+                                <p>1 DAY AGO</p>
+
+                            </div>
+
+                        </div>
+
+                        <!-- <<<<<<<<<<<<<<<  notifications-sec  >>>>>>>>>>>>>> -->
+
+                        <div class="notifications-sec">
+
+                            <!-- ...........  profile-img  ............ -->
+
+                            <div class="profile-img">
+                                <img src="./images/profile-15.jpg" alt="">
+                            </div>
+
+                            <!-- ...........  intro  ............ -->
+
+                            <div class="intro">
+
+                                <!-- /////////////  Heading  ///////////// -->
+                                <h3><span>Mary Gold and 283 others</span> liked your post</h3>
+
+                                <!-- /////////////  paragraph  ///////////// -->
+                                <p>2 DAYS AGO</p>
+
+                            </div>
+
+                        </div>
+
+                        <!-- <<<<<<<<<<<<<<<  notifications-sec  >>>>>>>>>>>>>> -->
+
+                        <div class="notifications-sec">
+
+                            <!-- ...........  profile-img  ............ -->
+
+                            <div class="profile-img">
+                                <img src="./images/profile-5.jpg" alt="">
+                            </div>
+
+                            <!-- ...........  intro  ............ -->
+
+                            <div class="intro">
+
+                                <!-- /////////////  Heading  ///////////// -->
+                                <h3><span>Charsh Jai</span> commented on your post tagged in</h3>
+
+                                <!-- /////////////  paragraph  ///////////// -->
+                                <p>12 DAYS AGO</p>
+
+                            </div>
+
+                        </div>
+
+                        <!-- <<<<<<<<<<<<<<<  notifications-sec  >>>>>>>>>>>>>> -->
+
+                        <div class="notifications-sec">
+
+                            <!-- ...........  profile-img  ............ -->
+
+                            <div class="profile-img">
+                                <img src="./images/profile-19.jpg" alt="">
+                            </div>
+
+                            <!-- ...........  intro  ............ -->
+
+                            <div class="intro">
+
+                                <!-- /////////////  Heading  ///////////// -->
+                                <h3><span>Jenifar Roy</span> likes this your post</h3>
+
+                                <!-- /////////////  paragraph  ///////////// -->
+                                <p>10 MINUTES AGO</p>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </section>
+
+                <!-- ###############  Messages-Section  ################ -->
+
+                <section class="messages-section">
+
+                    <!-- -----------------  Messages-Icon  ---------------- -->
+                    <span><i class="fa-solid fa-envelope"></i></span>
+
+                    <!-- -----------------  Heading  ---------------- -->
+                    <h2>Messages</h2>
+
+                </section>
+
+                <!-- ###############  Bookmarks-Section  ################ -->
+
+                <section class="bookmarks-section">
+
+                    <!-- -----------------  Bookmarks-Icon  ---------------- -->
+                    <span><i class="fa-regular fa-bookmark"></i></span>
+
+                    <!-- -----------------  Heading  ---------------- -->
+                    <h2>Bookmarks</h2>
+
+                </section>
+
+                <!-- ###############  Analytics-Section  ################ -->
+
+                <section class="analytics-section">
+
+                    <!-- -----------------  Analytics-Icon  ---------------- -->
+                    <span><i class="fa-solid fa-chart-line"></i></span>
+
+                    <!-- -----------------  Heading  ---------------- -->
+                    <h2>Analytics</h2>
+
+                </section>
+
+                <!-- ###############  Theme-Section  ################ -->
+
+                <section class="theme-section">
+
+                    <!-- -----------------  Theme-Icon  ---------------- -->
+                    <span><i class="fa-solid fa-palette"></i></span>
+
+                    <!-- -----------------  Heading  ---------------- -->
+                    <h2>Theme</h2>
+
+                </section>
+
+                <!-- ###############  Settings-Section  ################ -->
+
+                <section class="settings-section">
+
+                    <!-- -----------------  Settings-Icon  ---------------- -->
+                    <span><i class="fa-solid fa-gear"></i></span>
+
+                    <!-- -----------------  Heading  ---------------- -->
+                    <h2>Settings</h2>
+
+                </section>
+
+                <!-- ###############  Create-post-btn-Section  ################ -->
+
+                <button id="create-post-btn">
+                    Create Post
+                </button>
+            </div>
+
+            <!-- ******************  mid-main  ****************** -->
+
+            <div class="mid-main">
+
+                <!-- ###############  mid- Container  ################ -->
+
+                <div class="mid-container">
+
+                    <!-- ----------------  Post Section  ---------------- -->
+
+                    <section class="post-section">
+
+                        <!-- <<<<<<<<<<<<<<<  Profile-img  >>>>>>>>>>>>>>> -->
+
+                        <div class="profile-img">
+                            <img src="./images/profile-1.jpg" alt="">
+                        </div>
+
+                        <!-- <<<<<<<<<<<<<<<  input search  >>>>>>>>>>>>>>> -->
+                        <input type="search" placeholder="What's on your mind, Diana?">
+
+                        <!-- <<<<<<<<<<<<<<<  Post button  >>>>>>>>>>>>>>> -->
+
+                        <button class="post-btn">
+                            Post
+                        </button>
+
+                    </section>
+
+                    <!-- ----------------  Post Uploaded Section  ---------------- -->
+
+                    <section class="post-uploaded-section">
+
+                        <!-- <<<<<<<<<<<<<<  profile-Container  >>>>>>>>>>>>>>>> -->
+
+                        <div class="profile-container">
+
+                            <!-- ..........  left-profile-container  .........  -->
+
+                            <div class="left-profile-container">
+                                <div class="profile-img">
+                                    <img src="./images/profile-13.jpg" alt="">
+                                </div>
+
+                                <div class="intro">
+                                    <h2>Lana Rose</h2>
+                                    <p>Dubai 15 MINUTES AGO</p>
+                                </div>
+                            </div>
+
+                            <!-- ..........  right-profile-container  .........  -->
+
+                            <div class="right-profile-container">
+                                <span>.</span>
+                                <span>.</span>
+                                <span>.</span>
+                            </div>
+
+                        </div>
+
+                        <!-- <<<<<<<<<<<<<<  feed img  >>>>>>>>>>>>>>>> -->
+                        <div class="feed-img">
+                            <img src="./images/feed-1.jpg" alt="">
+                        </div>
+
+                        <!-- <<<<<<<<<<<<<<  Icon  >>>>>>>>>>>>>>>> -->
+                        <div class="icon">
+
+                            <!-- ...........  Left-Icon  ............ -->
+
+                            <div class="left-icon">
+                                <i class="fa-regular fa-heart"></i>
+                                <i class="fa-regular fa-comment"></i>
+                                <i class="fa-solid fa-share-nodes"></i>
+                            </div>
+
+                            <!-- ...........  Right-Icon  ............ -->
+
+                            <div class="right-icon">
+                                <i class="fa-regular fa-bookmark"></i>
+                            </div>
+
+                        </div>
+
+                        <!-- <<<<<<<<<<<<<<  Post intro  >>>>>>>>>>>>>>>> -->
+
+                        <p>
+                            <img src="./images/profile-10.jpg" alt="">
+                            <img src="./images/profile-13.jpg" alt="">
+                            <img src="./images/profile-17.jpg" alt="">
+                            Liked by <span>Emest Achiever</span> and
+                            <span>2,323 others <br>Lana Rose</span> lorem ipsum
+                            dolor sit Lorem, ipsum #lifestyle<br><small>View off 277 comments</small>
+                        </p>
+
+                    </section>
+
+                    <!-- ----------------  Post Uploaded Section  ---------------- -->
+
+                    <section class="post-uploaded-section">
+
+                        <!-- <<<<<<<<<<<<<<  profile-Container  >>>>>>>>>>>>>>>> -->
+
+                        <div class="profile-container">
+
+                            <!-- ..........  left-profile-container  .........  -->
+
+                            <div class="left-profile-container">
+                                <div class="profile-img">
+                                    <img src="./images/profile-14.jpg" alt="">
+                                </div>
+
+                                <div class="intro">
+                                    <h2>Benjamin Dwayne</h2>
+                                    <p>USA 2 HOURS AGO</p>
+                                </div>
+                            </div>
+
+                            <!-- ..........  right-profile-container  .........  -->
+
+                            <div class="right-profile-container">
+                                <span>.</span>
+                                <span>.</span>
+                                <span>.</span>
+                            </div>
+
+                        </div>
+
+                        <!-- <<<<<<<<<<<<<<  feed img  >>>>>>>>>>>>>>>> -->
+                        <div class="feed-img">
+                            <img src="./images/feed-2.jpg" alt="">
+                        </div>
+
+                        <!-- <<<<<<<<<<<<<<  Icon  >>>>>>>>>>>>>>>> -->
+                        <div class="icon">
+
+                            <!-- ...........  Left-Icon  ............ -->
+
+                            <div class="left-icon">
+                                <i class="fa-regular fa-heart"></i>
+                                <i class="fa-regular fa-comment"></i>
+                                <i class="fa-solid fa-share-nodes"></i>
+                            </div>
+
+                            <!-- ...........  Right-Icon  ............ -->
+
+                            <div class="right-icon">
+                                <i class="fa-regular fa-bookmark"></i>
+                            </div>
+
+                        </div>
+
+                        <!-- <<<<<<<<<<<<<<  Post intro  >>>>>>>>>>>>>>>> -->
+
+                        <p>
+                            <img src="./images/profile-14.jpg" alt="">
+                            <img src="./images/profile-11.jpg" alt="">
+                            <img src="./images/profile-18.jpg" alt="">
+                            Liked by <span>Emest Achiever</span> and
+                            <span>13,223 others <br>Lana Rose</span> lorem ipsum
+                            dolor sit Lorem, ipsum #lifestyle<br><small>View off 2771 comments</small>
+                        </p>
+
+                    </section>
+
+                    <!-- ----------------  Post Uploaded Section  ---------------- -->
+
+                    <section class="post-uploaded-section">
+
+                        <!-- <<<<<<<<<<<<<<  profile-Container  >>>>>>>>>>>>>>>> -->
+
+                        <div class="profile-container">
+
+                            <!-- ..........  left-profile-container  .........  -->
+
+                            <div class="left-profile-container">
+                                <div class="profile-img">
+                                    <img src="./images/profile-19.jpg" alt="">
+                                </div>
+
+                                <div class="intro">
+                                    <h2>Malik Berry</h2>
+                                    <p>Chana, 1 MINUTES AGO</p>
+                                </div>
+                            </div>
+
+                            <!-- ..........  right-profile-container  .........  -->
+
+                            <div class="right-profile-container">
+                                <span>.</span>
+                                <span>.</span>
+                                <span>.</span>
+                            </div>
+
+                        </div>
+
+                        <!-- <<<<<<<<<<<<<<  feed img  >>>>>>>>>>>>>>>> -->
+                        <div class="feed-img">
+                            <img src="./images/feed-3.jpg" alt="">
+                        </div>
+
+                        <!-- <<<<<<<<<<<<<<  Icon  >>>>>>>>>>>>>>>> -->
+                        <div class="icon">
+
+                            <!-- ...........  Left-Icon  ............ -->
+
+                            <div class="left-icon">
+                                <i class="fa-regular fa-heart"></i>
+                                <i class="fa-regular fa-comment"></i>
+                                <i class="fa-solid fa-share-nodes"></i>
+                            </div>
+
+                            <!-- ...........  Right-Icon  ............ -->
+
+                            <div class="right-icon">
+                                <i class="fa-regular fa-bookmark"></i>
+                            </div>
+
+                        </div>
+
+                        <!-- <<<<<<<<<<<<<<  Post intro  >>>>>>>>>>>>>>>> -->
+
+                        <p>
+                            <img src="./images/profile-8.jpg" alt="">
+                            <img src="./images/profile-10.jpg" alt="">
+                            <img src="./images/profile-4.jpg" alt="">
+                            Liked by <span>Emest Achiever</span> and
+                            <span>9,323 others <br>Lana Rose</span> lorem ipsum
+                            dolor sit Lorem, ipsum #lifestyle<br><small>View off 777 comments</small>
+                        </p>
+
+                    </section>
+
+                    <!-- ----------------  Post Uploaded Section  ---------------- -->
+
+                    <section class="post-uploaded-section">
+
+                        <!-- <<<<<<<<<<<<<<  profile-Container  >>>>>>>>>>>>>>>> -->
+
+                        <div class="profile-container">
+
+                            <!-- ..........  left-profile-container  .........  -->
+
+                            <div class="left-profile-container">
+                                <div class="profile-img">
+                                    <img src="./images/profile-15.jpg" alt="">
+                                </div>
+
+                                <div class="intro">
+                                    <h2>James Toy</h2>
+                                    <p>London, 10 MINUTES AGO</p>
+                                </div>
+                            </div>
+
+                            <!-- ..........  right-profile-container  .........  -->
+
+                            <div class="right-profile-container">
+                                <span>.</span>
+                                <span>.</span>
+                                <span>.</span>
+                            </div>
+
+                        </div>
+
+                        <!-- <<<<<<<<<<<<<<  feed img  >>>>>>>>>>>>>>>> -->
+                        <div class="feed-img">
+                            <img src="./images/feed-4.jpg" alt="">
+                        </div>
+
+                        <!-- <<<<<<<<<<<<<<  Icon  >>>>>>>>>>>>>>>> -->
+                        <div class="icon">
+
+                            <!-- ...........  Left-Icon  ............ -->
+
+                            <div class="left-icon">
+                                <i class="fa-regular fa-heart"></i>
+                                <i class="fa-regular fa-comment"></i>
+                                <i class="fa-solid fa-share-nodes"></i>
+                            </div>
+
+                            <!-- ...........  Right-Icon  ............ -->
+
+                            <div class="right-icon">
+                                <i class="fa-regular fa-bookmark"></i>
+                            </div>
+
+                        </div>
+
+                        <!-- <<<<<<<<<<<<<<  Post intro  >>>>>>>>>>>>>>>> -->
+
+                        <p>
+                            <img src="./images/profile-2.jpg" alt="">
+                            <img src="./images/profile-19.jpg" alt="">
+                            <img src="./images/profile-3.jpg" alt="">
+                            Liked by <span>Emest Achiever</span> and
+                            <span>19,323 others <br>Lana Rose</span> lorem ipsum
+                            dolor sit Lorem, ipsum #lifestyle<br><small>View off 7777 comments</small>
+                        </p>
+
+                    </section>
+
+                    <!-- ----------------  Post Uploaded Section  ---------------- -->
+
+                    <section class="post-uploaded-section">
+
+                        <!-- <<<<<<<<<<<<<<  profile-Container  >>>>>>>>>>>>>>>> -->
+
+                        <div class="profile-container">
+
+                            <!-- ..........  left-profile-container  .........  -->
+
+                            <div class="left-profile-container">
+                                <div class="profile-img">
+                                    <img src="./images/profile-9.jpg" alt="">
+                                </div>
+
+                                <div class="intro">
+                                    <h2>Hoy Toy</h2>
+                                    <p>London, 8 MINUTES AGO</p>
+                                </div>
+                            </div>
+
+                            <!-- ..........  right-profile-container  .........  -->
+
+                            <div class="right-profile-container">
+                                <span>.</span>
+                                <span>.</span>
+                                <span>.</span>
+                            </div>
+
+                        </div>
+
+                        <!-- <<<<<<<<<<<<<<  feed img  >>>>>>>>>>>>>>>> -->
+                        <div class="feed-img">
+                            <img src="./images/feed-5.jpg" alt="">
+                        </div>
+
+                        <!-- <<<<<<<<<<<<<<  Icon  >>>>>>>>>>>>>>>> -->
+                        <div class="icon">
+
+                            <!-- ...........  Left-Icon  ............ -->
+
+                            <div class="left-icon">
+                                <i class="fa-regular fa-heart"></i>
+                                <i class="fa-regular fa-comment"></i>
+                                <i class="fa-solid fa-share-nodes"></i>
+                            </div>
+
+                            <!-- ...........  Right-Icon  ............ -->
+
+                            <div class="right-icon">
+                                <i class="fa-regular fa-bookmark"></i>
+                            </div>
+
+                        </div>
+
+                        <!-- <<<<<<<<<<<<<<  Post intro  >>>>>>>>>>>>>>>> -->
+
+                        <p>
+                            <img src="./images/profile-11.jpg" alt="">
+                            <img src="./images/profile-16.jpg" alt="">
+                            <img src="./images/profile-20.jpg" alt="">
+                            Liked by <span>Emest Achiever</span> and
+                            <span>11,323 others <br>Lana Rose</span> lorem ipsum
+                            dolor sit Lorem, ipsum #lifestyle #cool<br><small>View off 5777 comments</small>
+                        </p>
+
+                    </section>
+
+                    <!-- ----------------  Post Uploaded Section  ---------------- -->
+
+                    <section class="post-uploaded-section">
+
+                        <!-- <<<<<<<<<<<<<<  profile-Container  >>>>>>>>>>>>>>>> -->
+
+                        <div class="profile-container">
+
+                            <!-- ..........  left-profile-container  .........  -->
+
+                            <div class="left-profile-container">
+                                <div class="profile-img">
+                                    <img src="./images/profile-5.jpg" alt="">
+                                </div>
+
+                                <div class="intro">
+                                    <h2>Jonny Roy</h2>
+                                    <p>USA, 2 DAYS AGO</p>
+                                </div>
+                            </div>
+
+                            <!-- ..........  right-profile-container  .........  -->
+
+                            <div class="right-profile-container">
+                                <span>.</span>
+                                <span>.</span>
+                                <span>.</span>
+                            </div>
+
+                        </div>
+
+                        <!-- <<<<<<<<<<<<<<  feed img  >>>>>>>>>>>>>>>> -->
+                        <div class="feed-img">
+                            <img src="./images/feed-6.jpg" alt="">
+                        </div>
+
+                        <!-- <<<<<<<<<<<<<<  Icon  >>>>>>>>>>>>>>>> -->
+                        <div class="icon">
+
+                            <!-- ...........  Left-Icon  ............ -->
+
+                            <div class="left-icon">
+                                <i class="fa-regular fa-heart"></i>
+                                <i class="fa-regular fa-comment"></i>
+                                <i class="fa-solid fa-share-nodes"></i>
+                            </div>
+
+                            <!-- ...........  Right-Icon  ............ -->
+
+                            <div class="right-icon">
+                                <i class="fa-regular fa-bookmark"></i>
+                            </div>
+
+                        </div>
+
+                        <!-- <<<<<<<<<<<<<<  Post intro  >>>>>>>>>>>>>>>> -->
+
+                        <p>
+                            <img src="./images/profile-11.jpg" alt="">
+                            <img src="./images/profile-15.jpg" alt="">
+                            <img src="./images/profile-7.jpg" alt="">
+                            Liked by <span>Emest Achiever</span> and
+                            <span>21,323 others <br>Lana Rose</span> lorem ipsum
+                            dolor sit Lorem, ipsum #lifestyle #cool<br><small>View off 9777 comments</small>
+                        </p>
+
+                    </section>
+
+                    <!-- ----------------  Post Uploaded Section  ---------------- -->
+
+                    <section class="post-uploaded-section">
+
+                        <!-- <<<<<<<<<<<<<<  profile-Container  >>>>>>>>>>>>>>>> -->
+
+                        <div class="profile-container">
+
+                            <!-- ..........  left-profile-container  .........  -->
+
+                            <div class="left-profile-container">
+                                <div class="profile-img">
+                                    <img src="./images/profile-17.jpg" alt="">
+                                </div>
+
+                                <div class="intro">
+                                    <h2>Toni Stark</h2>
+                                    <p>UK, 8 HOURS AGO</p>
+                                </div>
+                            </div>
+
+                            <!-- ..........  right-profile-container  .........  -->
+
+                            <div class="right-profile-container">
+                                <span>.</span>
+                                <span>.</span>
+                                <span>.</span>
+                            </div>
+
+                        </div>
+
+                        <!-- <<<<<<<<<<<<<<  feed img  >>>>>>>>>>>>>>>> -->
+                        <div class="feed-img">
+                            <img src="./images/feed-7.jpg" alt="">
+                        </div>
+
+                        <!-- <<<<<<<<<<<<<<  Icon  >>>>>>>>>>>>>>>> -->
+                        <div class="icon">
+
+                            <!-- ...........  Left-Icon  ............ -->
+
+                            <div class="left-icon">
+                                <i class="fa-regular fa-heart"></i>
+                                <i class="fa-regular fa-comment"></i>
+                                <i class="fa-solid fa-share-nodes"></i>
+                            </div>
+
+                            <!-- ...........  Right-Icon  ............ -->
+
+                            <div class="right-icon">
+                                <i class="fa-regular fa-bookmark"></i>
+                            </div>
+
+                        </div>
+
+                        <!-- <<<<<<<<<<<<<<  Post intro  >>>>>>>>>>>>>>>> -->
+
+                        <p>
+                            <img src="./images/profile-14.jpg" alt="">
+                            <img src="./images/profile-18.jpg" alt="">
+                            <img src="./images/profile-20.jpg" alt="">
+                            Liked by <span>Emest Achiever</span> and
+                            <span>51,323 others <br>Lana Rose</span> lorem ipsum
+                            dolor sit Lorem, ipsum #lifestyle #cool<br><small>View off 12034 comments</small>
+                        </p>
+
+                    </section>
+
+                </div>
+
+            </div>
+
+            <!-- ******************  right-main  ****************** -->
+
+            <div class="right-main">
+
+                <!-- ###############  right-container ############## -->
+
+                <div class="right-container">
+
+                    <!-- -------------  messages-container  -------------- -->
+
+                    <div class="messages-container">
+
+                        <!-- <<<<<<<<<<<<<<  messages-section  >>>>>>>>>>>>>>> -->
+
+                        <div class="messages-section">
+
+                            <!-- ............  Heading  ........... -->
+                            <h2>Messages</h2>
+
+                            <!-- ............  Icon  ........... -->
+                            <i class="fa-regular fa-message"></i>
+
+                        </div>
+
+                        <!-- <<<<<<<<<<<<<<  search-container  >>>>>>>>>>>>>>> -->
+
+                        <div class="search-container">
+
+                            <!-- ............  Icon  ........... -->
+                            <i class="fa-solid fa-magnifying-glass"></i>
+
+                            <!-- ............  Input Search  ........... -->
+                            <input type="search" placeholder="Search messages">
+
+                        </div>
+
+                        <!-- <<<<<<<<<<<<<<  option-section  >>>>>>>>>>>>>>> -->
+
+                        <div class="option-section">
+                            <h3>Primary</h3>
+                            <h3>General</h3>
+                            <h3>Requests(7)</h3>
+                        </div>
+                        <hr>
+
+                        <!-- <<<<<<<<<<<<<<  primary-section  >>>>>>>>>>>>>>> -->
+
+                        <div class="primary-section">
+
+                            <!-- ...........  primary-img  ............ -->
+
+                            <div class="primary-img">
+
+                                <!-- /////////////  img  ////////////// -->
+                                <img src="./images/profile-2.jpg" alt="">
+
+                            </div>
+
+                            <!-- ...........  primary-intro  ............ -->
+
+                            <div class="primary-intro">
+
+                                <!-- /////////////  Heading  ////////////// -->
+                                <h3>Edem Quist</h3>
+
+                                <!-- /////////////  paragraph  ////////////// -->
+                                <p>Just woke up bruh</p>
+
+                            </div>
+
+                        </div>
+
+                        <div class="primary-section">
+
+                            <!-- ...........  primary-img  ............ -->
+
+                            <div class="primary-img">
+
+                                <!-- /////////////  img  ////////////// -->
+                                <img src="./images/profile-3.jpg" alt="">
+
+                            </div>
+
+                            <!-- ...........  primary-intro  ............ -->
+
+                            <div class="primary-intro">
+
+                                <!-- /////////////  Heading  ////////////// -->
+                                <h3>Franca Deila</h3>
+
+                                <!-- /////////////  paragraph  ////////////// -->
+                                <p>Received bruth. Thanks!</p>
+
+                            </div>
+
+                        </div>
+
+                        <div class="primary-section">
+
+                            <!-- ...........  primary-img  ............ -->
+
+                            <div class="primary-img">
+
+                                <!-- /////////////  img  ////////////// -->
+                                <img src="./images/profile-4.jpg" alt="">
+
+                            </div>
+
+                            <!-- ...........  primary-intro  ............ -->
+
+                            <div class="primary-intro">
+
+                                <!-- /////////////  Heading  ////////////// -->
+                                <h3>Jane Doe</h3>
+
+                                <!-- /////////////  paragraph  ////////////// -->
+                                <p>ok</p>
+
+                            </div>
+
+                        </div>
+
+                        <div class="primary-section">
+
+                            <!-- ...........  primary-img  ............ -->
+
+                            <div class="primary-img">
+
+                                <!-- /////////////  img  ////////////// -->
+                                <img src="./images/profile-5.jpg" alt="">
+
+                            </div>
+
+                            <!-- ...........  primary-intro  ............ -->
+
+                            <div class="primary-intro">
+
+                                <!-- /////////////  Heading  ////////////// -->
+                                <h3>Daniella Jackson</h3>
+
+                                <!-- /////////////  paragraph  ////////////// -->
+                                <p>2 new messages</p>
+
+                            </div>
+
+                        </div>
+
+                        <div class="primary-section">
+
+                            <!-- ...........  primary-img  ............ -->
+
+                            <div class="primary-img">
+
+                                <!-- /////////////  img  ////////////// -->
+                                <img src="./images/profile-6.jpg" alt="">
+
+                            </div>
+
+                            <!-- ...........  primary-intro  ............ -->
+
+                            <div class="primary-intro">
+
+                                <!-- /////////////  Heading  ////////////// -->
+                                <h3>Juliet Makarey</h3>
+
+                                <!-- /////////////  paragraph  ////////////// -->
+                                <p>Jol u right</p>
+
+                            </div>
+
+                        </div>
+
+                        <div class="primary-section">
+
+                            <!-- ...........  primary-img  ............ -->
+
+                            <div class="primary-img">
+
+                                <!-- /////////////  img  ////////////// -->
+                                <img src="./images/profile-7.jpg" alt="">
+
+                            </div>
+
+                            <!-- ...........  primary-intro  ............ -->
+
+                            <div class="primary-intro">
+
+                                <!-- /////////////  Heading  ////////////// -->
+                                <h3>Chantel Msiza</h3>
+
+                                <!-- /////////////  paragraph  ////////////// -->
+                                <p>Birthday Tomorrow!</p>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <!-- -------------  requests-name  -------------- -->
+
+                    <h3>Requests</h3>
+
+                    <!-- -------------  requests-container  -------------- -->
+
+                    <div class="requests-container">
+
+                        <!-- <<<<<<<<<<<<<  requests-card  >>>>>>>>>>>>> -->
+
+                        <div class="requests-card">
+
+                            <!-- ..............  profile-sec  ............. -->
+
+                            <div class="profile-sec">
+
+                                <!-- /////////////  profile-img  ////////////// -->
+
+                                <div class="profile-img">
+                                    <img src="./images/profile-16.jpg" alt="">
+                                </div>
+
+                                <!-- /////////////  intro  ////////////// -->
+
+                                <div class="intro">
+
+                                    <!-- \\\\\\\\\\\\  Heading  \\\\\\\\\\\\ -->
+                                    <h3>Hajia Bintu</h3>
+
+                                    <!-- \\\\\\\\\\\\  paragraph  \\\\\\\\\\\\ -->
+                                    <p>8 mutual friends</p>
+
+                                </div>
+
+                            </div>
+
+                            <!-- ..............  btns-sec  ............. -->
+
+                            <div class="btns">
+
+                                <!-- ////////////  Button  //////////// -->
+                                <button>Accept</button>
+
+                                <!-- ////////////  Button  //////////// -->
+                                <button>Cancel</button>
+
+                            </div>
+
+                        </div>
+
+                        <!-- <<<<<<<<<<<<<  requests-card  >>>>>>>>>>>>> -->
+
+                        <div class="requests-card">
+
+                            <!-- ..............  profile-sec  ............. -->
+
+                            <div class="profile-sec">
+
+                                <!-- /////////////  profile-img  ////////////// -->
+
+                                <div class="profile-img">
+                                    <img src="./images/profile-19.jpg" alt="">
+                                </div>
+
+                                <!-- /////////////  intro  ////////////// -->
+
+                                <div class="intro">
+
+                                    <!-- \\\\\\\\\\\\  Heading  \\\\\\\\\\\\ -->
+                                    <h3>Thomas Ege</h3>
+
+                                    <!-- \\\\\\\\\\\\  paragraph  \\\\\\\\\\\\ -->
+                                    <p>2 mutual friends</p>
+
+                                </div>
+
+                            </div>
+
+                            <!-- ..............  btns-sec  ............. -->
+
+                            <div class="btns">
+
+                                <!-- ////////////  Button  //////////// -->
+                                <button>Accept</button>
+
+                                <!-- ////////////  Button  //////////// -->
+                                <button>Cancel</button>
+
+                            </div>
+
+                        </div>
+
+                        <!-- <<<<<<<<<<<<<  requests-card  >>>>>>>>>>>>> -->
+
+                        <div class="requests-card">
+
+                            <!-- ..............  profile-sec  ............. -->
+
+                            <div class="profile-sec">
+
+                                <!-- /////////////  profile-img  ////////////// -->
+
+                                <div class="profile-img">
+                                    <img src="./images/profile-13.jpg" alt="">
+                                </div>
+
+                                <!-- /////////////  intro  ////////////// -->
+
+                                <div class="intro">
+
+                                    <!-- \\\\\\\\\\\\  Heading  \\\\\\\\\\\\ -->
+                                    <h3>Jenifar Roy</h3>
+
+                                    <!-- \\\\\\\\\\\\  paragraph  \\\\\\\\\\\\ -->
+                                    <p>19 mutual friends</p>
+
+                                </div>
+
+                            </div>
+
+                            <!-- ..............  btns-sec  ............. -->
+
+                            <div class="btns">
+
+                                <!-- ////////////  Button  //////////// -->
+                                <button>Accept</button>
+
+                                <!-- ////////////  Button  //////////// -->
+                                <button>Cancel</button>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </main>
+
+    <script src="./script/script.js"></script>
+</body>
+
+</html>

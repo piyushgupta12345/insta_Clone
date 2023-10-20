@@ -1,0 +1,121 @@
+:root {
+    --color-purple: #6b4ce6;
+    --color-purple-hover:#7b5eec;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    outline: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    background-color: #ebe6fa;
+
+}
+
+/* <!-- +++++++++++++++++++++++  Header  ++++++++++++++++++++++++ --> */
+
+header {
+    background: #FFFFFF;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+/* <!-- ===================  Navigation  ==================== --> */
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 150px;
+}
+
+/* <!-- ******************  Left-Side  ****************** --> */
+
+nav .left {
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+/* <!-- ******************  mid-Side  ****************** --> */
+
+nav .mid {
+    background-color: #ebe6fa;
+    width: 500px;
+    padding: 20px 20px;
+    border-radius: 35px;
+    display: flex;
+    gap: 20px;
+    justify-content: start;
+    align-items: center;
+}
+
+/* <!-- ###############  Search-Icon  ################ --> */
+
+nav .mid i {}
+
+/* <!-- ###############  Input-Search  ################ --> */
+
+nav .mid input {
+    width: 420px;
+    font-size: 1rem;
+    border: none;
+    background-color: #ebe6fa;
+}
+
+/* <!-- ******************  right-Side  ****************** --> */
+
+nav .right {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+}
+
+/* <!-- ###############  Create Button  ################ --> */
+
+nav .right button {
+    padding: 10px 35px;
+    font-size: 1.5rem;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    color: #FFFFFF;
+    background-color: var(--color-purple);
+    border: none;
+    transition: all 0.2s ease-in-out;
+}
+
+nav .right button:hover {
+    background-color: var(--color-purple-hover);
+}
+
+/* <!-- ###############  Profile-img  ################ --> */
+
+nav .right .profile-img img {
+    width: 50px;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+@media (max-width:1244px) {
+    nav {
+        padding: 8px 10px;
+    }
+}
+
+/* <!-- +++++++++++++++++++++++  Main  ++++++++++++++++++++++++ --> */
+
+main {
+    
+}
+
+@media (max-width:1244px) {
+    nav {
+        padding: 8px 10px;
+    }
+}
